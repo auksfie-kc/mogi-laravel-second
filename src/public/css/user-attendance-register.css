@@ -1,0 +1,69 @@
+
+.user-attendance__form {
+    max-width: 400px;
+    text-align: center;   /* 中央寄せ */
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.user-attendance-form-message p{
+    display: inline-block;       /* テキストに合わせてサイズ調整 */
+    background-color: #d2cfcf;   /* 薄いグレー背景 */
+    color: #333;                 /* 濃いグレー文字 */
+    padding: 6px 16px;           /* 内側余白（上下・左右） */
+    border-radius: 20px;         /* 丸み */
+    font-weight: 500;            /* 少し太字 */
+    font-size: 15px;             /* 読みやすい大きさ */
+    margin: 8px 0;
+}
+
+.user-attendance-form-time {
+  text-align: center;   /* 中央寄せ */
+  margin-top: 20px;     /* 上に少し余白 */
+}
+
+.user-attendance-form-time p:first-child {
+    font-size: 25px;      /* 年月日をやや大きく */
+    color: #333;
+    margin-bottom: 6px;   /* 時刻との間に少し隙間 */
+}
+
+.user-attendance-form-time p:last-child {
+    font-size: 42px;      /* 時刻をさらに大きく */
+    font-weight: 700;     /* 太文字 */
+    color: #222;
+    line-height: 1.2;     /* 行の高さを少し詰める */
+}
+
+.btn-primary,
+.btn-success {
+  background-color: #000;     /* 黒背景 */
+  color: #fff;                /* 白文字 */
+  border: none;               /* 枠線なし */
+  border-radius: 8px;         /* 少し丸み */
+  padding: 10px 50px;         /* ゆったりサイズ */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-warning {
+  background-color: #fff;     /* 白背景 */
+  color: #000;                /* 黒文字 */
+  border: 2px solid #000;     /* 黒い枠線 */
+  border-radius: 8px;         /* 丸み */
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+.work-buttons {
+    display: flex;
+    justify-content: center;  /* 横方向中央 */
+    gap: 30px;               /* ボタン間のスペース */
+    margin-top: 20px;
+}
+
+.form__message p {
+        font-weight: 700;     /* 太文字 */
+
+}

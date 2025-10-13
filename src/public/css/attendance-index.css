@@ -1,0 +1,86 @@
+body.bg-beige {
+  background-color: #dad8d4; /* 少し濃いベージュ */
+}
+
+.attendance-list {
+  width: 90%;
+  width: 900px;    /* 横幅を広くする */
+  margin: 0 auto;      /* 中央寄せ */
+}
+.attendance__list__heading{
+ border-left: 4px solid #000;  /* 左に黒ライン */
+    padding-left: 10px; 
+}
+.attendance-month__heading {
+  background-color: #fff;       /* 背景白 */
+  border-radius: 8px;           /* 角をやや丸く */
+  padding: 10px 0;              /* 上下に余白 */
+  max-width: 900px;
+  margin: 0 auto 20px auto;     /* 中央寄せ＋下余白 */
+  text-align: center;
+}
+
+.attendance-month__heading a {
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.attendance-month__heading a:nth-child(1),
+.attendance-month__heading a:nth-child(3) {
+  color: #555; /* 濃いグレー（前月・翌月） */
+}
+
+.attendance-month__heading a:nth-child(2) {
+  color: #000; /* 今月は黒文字 */
+  font-weight: 600;
+}
+.text-center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.attendance__table {
+  background-color: #fff;          /* 背景白 */
+  border-radius: 10px;             /* 角をやや丸く */
+  padding: 0%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;        /* 中央寄せ＋下余白 */
+}
+
+.attendance__table table {
+  width: 100%;
+  border-collapse: separate;       /* 枠を独立させる */
+  border-spacing: 0;           /* 行ごとの余白 */
+}
+
+.attendance__table th,
+.attendance__table td {
+  text-align: center;
+  padding: 10px 5px;
+  color: #444;                     /* 濃いグレー文字 */
+}
+.attendance__table th {
+  font-weight: 600;
+  padding-bottom: 15px;            /* タイトル下に少し余白 */
+  border-bottom: 5px solid #ddd;   /* タイトル下のみ線 */
+}
+.attendance__table tr {
+  background-color: #fff;
+  border-radius: 8px;
+}
+.attendance__table td {
+  border-top: none;
+}
+
+.attendance__table tr:not(:first-child) td {
+
+  border-top: 3px solid #ddd;   /* 各行を独立させるための横線 */
+}
+
+.attendance__table a {
+  color: #000;                     /* 「詳細」だけ黒文字 */
+  text-decoration: none;
+  font-weight: 600;
+}

@@ -1,0 +1,83 @@
+body.bg-beige {
+  background-color: #dad8d4; /* 少し濃いベージュ */
+}
+.requests-list {
+  width: 90%;
+  width: 900px; 
+  height: 500px;
+  margin:  40px auto 0 auto;      /* 中央寄せ */
+}
+.requests-list__heading{
+ border-left: 4px solid #000;  /* 左に黒ライン */
+    padding-left: 10px; 
+}
+.requests__list__tabs {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;   /* やや左寄せ */
+  gap: 40px;                     /* ボタン間の余白 */
+  border-bottom: 1px solid #000; /* 全体に黒い下線 */
+  width: 100%;
+  max-width: 900px;              /* requests-list と合わせる */
+  margin: 0 auto 30px auto;      /* 中央寄せ＋下余白 */
+  padding-bottom: 8px;           /* 線とボタンの間に少し余白 */
+}
+
+.requests__list__tabs button {
+  background: transparent;       /* 背景透明 */
+  border: none;                  /* 枠なし */
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 24px;
+}
+
+.requests__list__tabs button.active {
+  font-weight: 700;              /* 押された時に太字 */
+  color: #000;
+}
+
+.requests__list {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;  
+  min-height: 500px;
+}
+
+.requests__table {
+  background-color: #fff;          /* 背景白 */
+  border-radius: 5px;             /* 角をやや丸く */
+  padding: 0%;
+  width: 100%;
+  min-height: 400px; 
+  margin: 0 auto 40px auto;
+  justify-content: center;
+  border-collapse: collapse;
+  table-layout: fixed;        /* 中央寄せ＋下余白 */
+}
+.requests__table th,
+.requests__table td {
+  text-align: center;
+  padding: 10px 0px;
+  color: #444;                     /* 濃いグレー文字 */
+}
+.requests__table th {
+  font-weight: 600;
+  padding-bottom: 10px;  
+  border-bottom: 5px solid #dad8d4;   /* タイトル下のみ線 */
+}
+.requests__table tr {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.requests__table tr:not(:first-child) td {
+
+  border-top: 3px solid #dad8d4;   /* 各行を独立させるための横線 */
+}
+
+.requests__table a {
+  color: #000;                     /* 「詳細」だけ黒文字 */
+  text-decoration: none;
+  font-weight: 600;
+}

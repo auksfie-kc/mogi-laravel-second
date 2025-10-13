@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    justify-content: center; /* 横中央 */
+    align-items:flex-start;    /* 縦中央 */
+    min-height: 100vh;      /* 画面全体の高さ */
+    padding: 20px;
+}
+
+.bg-beige {
+  background-color: #f9f7f3;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.header {
+    background: #000;
+    color: #fff;
+    padding: 4px 0;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.header-nav__button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}

@@ -1,0 +1,94 @@
+body.bg-beige {
+  background-color: #dad8d4; /* 少し濃いベージュ */
+}
+
+.attendance-show {
+    width: 90%;
+  width: 900px;    /* 横幅を広くする */
+  margin: 0 auto;      /* 中央寄せ */
+}
+.attendance__show__heading{
+ border-left: 4px solid #000;  /* 左に黒ライン */
+    padding-left: 10px; 
+}
+.attendance__table{
+    background-color: #fff;          /* 背景白 */
+  border-radius: 10px;             /* 角をやや丸く */
+  padding: 0%;
+  max-width: 900px;
+  margin: 0 auto 20px auto; 
+  width: 900px;  
+   height: 555px;
+   display: flex;  
+   position: relative;
+
+}
+.attendance__table table {
+  width: 100%;
+  height: 100%;  
+  border-collapse: collapse; 
+  table-layout: fixed;
+}
+.attendance__table th {
+  padding: 16px 40px; 
+  font-weight: 400;
+  width: 250px;  
+  text-align:left;
+}
+.attendance__table td {
+  padding: 16px 15px;   /* 上下を広げる（16px）・左右は15px */
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+.attendance__table td[colspan="3"] {
+  display: flex;
+  align-items: center;
+  gap: 24px;             /* 横方向のゆとり */
+  justify-content: flex-start;
+  }
+
+.attendance__table tr {
+  border-bottom: 1px solid #ddd; /* 各行の下に線 */
+
+}
+.attendance__table .att-date__year,
+.attendance__table .att-date__md {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+}
+.attendance__table .att-date__year { margin-right: 48px; } /* 画像の空きに近づける */
+
+.attendance__table input[type="time"],
+.attendance__table input[type="text"] {
+  font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+  width: 140px;   
+  line-height: 40px;
+  padding: 0 12px;
+  text-align: center;
+}
+.attendance__table button[type="submit"] {
+  position: static;        /* 絶対配置を解除 */
+  display: block;   
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin: 18px 0 0 auto; 
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.attendance__table td[colspan="3"] input[name="reason"] {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 52px;        /* 48〜64で調整 */
+  font-size: 16px;     /* 18〜22で調整 */
+  font-weight: 700;
+  padding: 0 16px;
+}
+
