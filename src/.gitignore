@@ -13,3 +13,16 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+# SSHや秘密キーなどの機密ファイルを除外
+*.pem
+*.key
+*.ppk
+*.pub
+*.crt
+*.der
+*.p12
+id_rsa*
+id_ed25519*
+.ssh/
+# MySQLコンテナのデータを除外
+docker/mysql/data/
