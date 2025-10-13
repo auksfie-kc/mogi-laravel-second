@@ -65,7 +65,7 @@ php artisan db:seed
 ---
 
 ##  ER図
-![ER図](./mogi2.drawio.png)
+![ER図](./mogi2.png)
 
 このER図は、スタッフ（users）が複数の勤怠(attendances)を持ち、勤怠には複数の休憩(rests)および修正申請(request_changes)と関連していることを示しています。
 
