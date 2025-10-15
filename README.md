@@ -29,9 +29,16 @@
 
 ### Dockerビルド
 
-1.git clone https://github.com/auksfie-kc/mogi-laravel-second.git
-2.Docker Desktopアプリを立ち上げる
-3.docker-compose up -d --build
+1.クローンする
+git clone https://github.com/auksfie-kc/mogi-laravel-second.git
+
+2. ファイルに入る
+cd mogi-laravel-second
+
+3.Docker Desktopアプリを立ち上げる
+
+4.Dockerをビルドする
+docker-compose up -d --build
 
 ### Laravel環境構築
 
@@ -41,17 +48,17 @@ docker-compose exec php bash
 2. パッケージのインストール
 composer install
 
-3. .env.example」ファイルをコピーして.envを作成
+3. .env.exampleファイルをコピーして.envを作成
 cp .env.example .env
 
-4. .envに以下の環境変数を追加
+4. .envに以下の環境変数を追加(Docker設定と同じ値にしてください)
 
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
 DB_DATABASE=laravel_db
-DB_USERNAME=（任意のDBユーザー名を入力してください）
-DB_PASSWORD=（任意のDBパスワードを入力してください）
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
 
 5. アプリケーションキーの作成
 php artisan key:generate
@@ -61,6 +68,16 @@ php artisan migrate
 
 7. シーディングの実行
 php artisan db:seed
+
+
+### アプリの起動確認
+
+1. コンテナを起動後、ブラウザで以下にアクセスしてください
+http://localhost/
+
+2. 自動的に会員登録画面（/register）にリダイレクトされます。
+
+3. 登録後、ログイン画面からログイン可能です。
 
 ---
 
@@ -85,6 +102,7 @@ php artisan db:seed
 ---
 
 ## URL
-開発環境：http://localhost
+
+開発環境：http://localhost/
 phpMyAdmin:http://localhost:8080/
 

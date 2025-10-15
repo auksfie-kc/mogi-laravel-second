@@ -22,11 +22,16 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/', function () {
+    return redirect('/register');
+});
+
+
 Route::middleware(['auth'])->group(function () {
 
     // メール確認待ち画面
     Route::get('/email/verify', function () {
-        return view('user.verify-email'); // ビューを自作する
+        return view('user.verify-email');
     })->name('verification.notice');
 
     // メール内のリンクをクリックした時
@@ -80,10 +85,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
 Route::middleware('auth:admin')->group(function () {
 
     Route::get('/admin/attendance/list/{year?}/{month?}/{day?}', [AdminAttendanceController::class, 'index'])->name('admin.top');
-    Route::get('/admin/staff/list',[AdminStaffController::class, 'index'])->name('admin.staff.list');
-    Route::get('/admin/attendance/staff/{id?}/{year?}/{month?}', [AdminStaffController::class, 'show'])->name('admin.attendance.staff');
     Route::get('/admin/attendance/{id?}', [AdminAttendanceController::class, 'show'])->name('admin.attendance.show');
     Route::post('/admin/attendance/update/{id}', [AdminAttendanceController::class, 'update'])->name('admin.attendance.update');
+    Route::get('/admin/staff/list',[AdminStaffController::class, 'index'])->name('admin.staff.list');
+    Route::get('/admin/attendance/staff/{id?}/{year?}/{month?}', [AdminStaffController::class, 'show'])->name('admin.attendance.staff');
     Route::get('/admin/requests', [AdminRequestController::class, 'index'])->name('admin.request.index');
     Route::get('/admin/requests/{id}', [AdminRequestController::class, 'show'])->name('admin.request.show');
     Route::post('/admin/requests/completed', [AdminRequestController::class, 'approve'])->name('admin.request.approve');

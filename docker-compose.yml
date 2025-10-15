@@ -15,6 +15,9 @@ services:
     build: ./docker/php
     volumes:
       - ./src:/var/www/
+    ports:
+      - "8000:8000"
+
 
   mysql:
     image: mysql:8.0.26
