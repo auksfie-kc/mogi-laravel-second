@@ -32,7 +32,7 @@
 1.クローンする
 git clone https://github.com/auksfie-kc/mogi-laravel-second.git
 
-2. ファイルに入る
+2.ファイルに入る
 cd mogi-laravel-second
 
 3.Docker Desktopアプリを立ち上げる
@@ -54,11 +54,17 @@ cp .env.example .env
 4. .envに以下の環境変数を追加(Docker設定と同じ値にしてください)
 
 DB_CONNECTION=mysql
+
 DB_HOST=mysql
+
 DB_PORT=3306
+
 DB_DATABASE=laravel_db
+
 DB_USERNAME=laravel_user
+
 DB_PASSWORD=laravel_pass
+
 
 5. アプリケーションキーの作成
 php artisan key:generate
